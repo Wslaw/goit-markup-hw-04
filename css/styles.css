@@ -1,0 +1,585 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navyblue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --lightslate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navybluemodal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+
+/* ----------------------------*/
+/* |         RESET   ON      | */
+/* ----------------------------*/
+
+main {
+  flex-grow: 1;
+}
+
+ul {
+  padding-left: 0;
+  display: flex;
+}
+
+/* Обнулення маржінів у заголовков та параграфів  */
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+.list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/*-------Зроби з картинок блоковий елемент + гумовий + автоподстройка висоти +
+         указывает содержимому заполнять контейнер object-fit: cover;
+         он будет отрезать стороны изображения, сохранение соотношения сторон */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* --Зроби зображення блочними елементами*/
+/*----------------------------------  */
+/*             RESET END              */
+/* ---------------------------------  */
+
+/* Додаємо "Паттерн для приховання заголовків": властивості для класу .visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* --------------------------------------- */
+/*              Components styles          */
+/* --------------------------------------- */
+
+/* --Визнач ширину та падінги для контейнера
+                   та пропиши їх у CSS-файлі: */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  background-color: var(--white);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  /* 1128 в макеті + 2х15рх */
+  padding-left: 15px;
+  padding-right: 15px;
+  /* задаємо центрування */
+  margin: 0 auto;
+  /* Підсвічуємо контейнери */
+  /* outline: 2px solid #31d0aa; */
+}
+
+/* ------------------------------------------ */
+/*         Header                         */
+/* ------------------------------------------ */
+
+.nav-page {
+  display: flex;
+  align-items: center;
+}
+
+.list-header {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header .item {
+  padding: 24px 0;
+  display: block;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 332;
+}
+
+.header {
+  border-bottom: 1px solid var(--cornflower);
+  display: flex;
+}
+
+.nav-page .logo-web {
+  margin-right: 76px;
+}
+
+.address {
+  display: flex;
+  gap: 40px;
+}
+
+.list-address {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.nav-page {
+  background: var(--white);
+}
+
+.logo-web {
+  color: var(--iris);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-studio {
+  color: var(--navyblue);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.link.item {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.link.item:hover,
+.link.item:focus {
+  color: var(--ocean);
+  /* text-decoration: underline; */
+}
+
+/* .link.item.current {
+  color: var(--iris);
+} */
+
+.contacts {
+  color: var(--slate);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address {
+  font-style: normal;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--ocean);
+}
+/* ----------------------------------------- */
+/*               Hero                        */
+/* ----------------------------------------- */
+
+.hero {
+  background: var(--navyblue);
+  color: var(--white);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.container .hero-title {
+  max-width: 496px;
+  padding-left: auto;
+  padding-right: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+/* default */
+.hero-btn {
+  cursor: pointer;
+  color: var(--white, #fff);
+
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  background: var(--iris);
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  padding: 16px 32px;
+  margin: 48px auto 0;
+
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  display: block;
+}
+/* hover */
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white);
+  background: var(--ocean);
+
+  /* Button Text */
+  /* font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+  letter-spacing: 0.64px; */
+}
+
+.hero-feature {
+  color: var(--navyblue);
+  /* Header 3 */
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.hero-text {
+  color: var(--slate);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ---------------------------------------------------------------------- */
+/* -------------------Section  feature----------------------------------- */
+/* ---------------------------------------------------------------------- */
+.feature {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.list .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.hero-feature {
+  margin-bottom: 8px;
+}
+
+.features {
+  display: flex;
+  width: 1128px;
+  height: 104px;
+  flex-shrink: 0;
+  /* margin-top: 120px; */
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.features-item {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+/* ------------------------------------------------------------------- */
+/* -------------------Section skills---------------------------------- */
+/* ------------------------------------------------------------------- */
+.skills {
+  padding-bottom: 120px;
+}
+
+.skills .title {
+  margin-bottom: 72px;
+  text-align: center;
+  /* width: calc((100% - 48px) / 3); */
+}
+
+.skill {
+  width: calc((100% - 48px) / 3);
+}
+
+.skills .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 72px auto 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------- */
+/*                            Section Cards                        */
+/* --------------------------------------------------------------- */
+
+.cards {
+  background-color: var(--cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.cards-title {
+  color: var(--navyblue);
+
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
+}
+
+.cards-list {
+  background-color: var(--white);
+  /*width: 264px;*/
+  width: calc((100% - 72px) / 4);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.cards .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.cards .subtitle {
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.box-employee {
+  padding: 32px 0px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- */
+/*                               Footer                            */
+/* --------------------------------------------------------------- */
+.footer .logo-web {
+  line-height: 1.17;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  max-width: 264px;
+}
+
+.footer {
+  background: var(--navyblue);
+  color: var(--cornflower);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer .logo-studio {
+  color: var(--cloud);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  color: var(--cloud);
+}
+
+/* -------------------------------------------------------------- */
+/*                            Page Portfolio                      */
+/* -------------------------------------------------------------- */
+
+.portfolio {
+  padding: 96px 0 120px 0;
+}
+
+.btn-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.btn-text {
+  cursor: pointer;
+  color: var(--iris);
+  background-color: var(--cloud);
+  text-align: center;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
+}
+
+.btn-text:hover,
+.btn-text:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+  border: 1px solid transparent;
+}
+
+.list-portfolio {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.item-portfolio {
+  width: calc((100% - 48px) / 3);
+}
+
+.box-portfolio {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+  text-align: start;
+}
+
+.title-portfolio {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  margin-bottom: 8px;
+}
+
+/* ----------------------------------------------------------------- */
+
+.title {
+  color: var(--navyblue);
+
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  color: var(--navyblue);
+
+  /* Header 3 */
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+}
+
+.subtitle-text {
+  color: var(--slate);
+
+  /* Body */
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+
+.subtitle-portfolio {
+  color: var(--slate);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
