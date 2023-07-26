@@ -101,7 +101,7 @@ body {
   /* задаємо центрування */
   margin: 0 auto;
   /* Підсвічуємо контейнери */
-  /* outline: 2px solid #31d0aa; */
+  outline: 2px solid #31d0aa;
 }
 
 /* ------------------------------------------ */
@@ -129,7 +129,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 332;
+  gap: 40;
 }
 
 .header {
@@ -402,20 +402,21 @@ body {
   margin-bottom: 72px;
 }
 
-.cards-list {
-  background-color: var(--white);
-  /*width: 264px;*/
-  width: calc((100% - 72px) / 4);
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px 0px 4px 4px;
-}
-
 .cards .list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
+
+.cards-list {
+  background-color: var(--white);
+  /*width: 264px;*/
+  flex-basis: calc((100% - 72px) / 4);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 4px 4px;
+}
+
 
 .cards .subtitle {
   line-height: 1.2;
