@@ -597,7 +597,7 @@ body {
 .footer-social-link {
   display: flex;
   flex-shrink: 0;
-  /* fill: var(--iris); */
+  fill: var(--cloud);
   flex-wrap: wrap;
 
   background-color: var(--iris);
@@ -626,7 +626,7 @@ body {
 
 
 
-}
+
 
 .footer-social-svg {
   fill: var(--cloud);
