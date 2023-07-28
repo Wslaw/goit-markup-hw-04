@@ -481,11 +481,9 @@ rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
   
  flex-basis: calc((100% - 72) / 4);
  flex-shrink: 0;
- 
-  
-}
+ }
 
-.social-link {
+ .social-link {
    display: flex;
     fill: var(--cloud);
     background-color: var(--iris);
@@ -502,27 +500,41 @@ rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
 /*                              Customers                         */
 /* -------------------------------------------------------------- */
 
-.container {
-}
+
 .customers {
   
    display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 72px;
-  margin: 120px auto;
+  /* margin: 120px auto; */
+padding: 120px 0;
 }
 
 .customers-list {
   list-style-type: none;
- justify-content: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 24px; 
 }
 .customers-item {
-  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
   flex-shrink: 0;
   border-radius: 4px;
-border: 1px solid var(--lightslate);
+  border: 1px solid var(--lightslate);
+  padding: 16px 32px;
+  /* cursor: pointer; */
+  color: var(--slate)  ;
+}
+.customers-svg {
+}
+
+.customers-use {
+  fill: var(--lightslate);
+}
+
+.customers-use:hover {
+  fill: var(--ocean);
 }
 
 /* --------------------------------------------------------------- */
@@ -604,19 +616,28 @@ letter-spacing: 0.32px;
 .footer-social-link {
   display: flex;
   flex-shrink: 0;
-  fill: var(--iris);
+  /* fill: var(--iris); */
   flex-wrap: wrap;
   
-  fill: var(--cloud);
+  /* fill: var(--cloud); */
   background-color: var(--iris);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   justify-content: center;
   align-items: center;
-  /* transition-duration: 250ms; */
+  transition-duration: 250ms;
+  fill: #31d0aa;
 }
 
+.footer-social-svg {
+     
+}
+
+
+.footer-social-link:hover {
+  background-color: #31d0aa;
+}
 
 .footer .container {
   display: flex;
