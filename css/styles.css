@@ -94,8 +94,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
-  /* max-width: 1158px; */
+  max-width: 1158px;
   /* 1128 в макеті + 2х15рх */
   padding-left: 15px;
   padding-right: 15px;
@@ -131,6 +130,11 @@ body {
   /* gap: 40; */
   /* justify-content: space-between; */
   align-items: center;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header {
@@ -157,10 +161,7 @@ body {
 
 .link {
   text-decoration: none;
-
   color: var(--navyblue);
-  /* этот text-align мешает логотипу в footer----смещает его к центру */
-  /* text-align: center; */
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -204,12 +205,18 @@ body {
 .link.item:hover,
 .link.item:focus {
   color: var(--ocean);
-  /* text-decoration: underline; */
 }
 
-/* .link.item.current {
+.link.item.current {
   color: var(--iris);
-} */
+}
+
+.link.item.current::after {
+  content: "_________";
+  width: 66px;
+  height: 4px;
+  color: var(--ocean);
+}
 
 .contacts {
   color: var(--slate);
@@ -229,26 +236,27 @@ body {
 .contacts:focus {
   color: var(--ocean);
 }
-/* ----------------------------------------- */
-/*               Hero                        */
-/* ----------------------------------------- */
+/* ------------------------------------------------------------- */
+/*                          Hero                                 */
+/* ------------------------------------------------------------- */
 
 .hero {
   background: var(--navyblue);
   color: var(--white);
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+/* Мабуть ніжніє строки треба в .hero .container */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
-  /* max-width: 1440px; */
+    url(../images/people-office\ 1.jpg);  
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size:cover;
   background-position: center;
 }
-
+/* --------до сих пор------------------------- */
 .container .hero-title {
   max-width: 496px;
   padding-left: auto;
@@ -289,6 +297,8 @@ body {
   height: 56px;
   border: none;
   display: block;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* hover */
 .hero-btn:hover,
@@ -444,12 +454,11 @@ body {
   flex-basis: calc((100% - 72px) / 4);
   justify-content: center;
   align-items: center;
-    border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    
 }
 
 .cards .subtitle {
@@ -499,24 +508,33 @@ body {
   /* transition-duration: 250ms; */
   /* transition-timing-function: cubic-bezier(0.4 0 0.2 1); */
 }
-
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--ocean);
+}
 /* -------------------------------------------------------------- */
 /*                              Customers                         */
 /* -------------------------------------------------------------- */
 
-.customers {
+.container .customers  {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 72px;
-  /* margin: 120px auto; */
+  /* gap: 72px; */
+  /* margin: 120px auto; */ 
   padding: 120px 0;
+}
+
+.customers .title {
+  /* color:red; */
+  margin-bottom: 72px;
 }
 
 .customers-list {
   list-style-type: none;
   justify-content: center;
   gap: 24px;
+  width: calc((100% - 120px) / 6); 
 }
 .customers-item {
   width: 168px;
@@ -539,6 +557,9 @@ body {
   fill: var(--ocean);
 }
 
+/* .customers-link:hover .customers-svg {
+  fill: var(--ocean);
+  } */
 
 /* --------------------------------------------------------------- */
 /*                               Footer                            */
@@ -628,7 +649,7 @@ body {
 
 .social-svg {
   fill: var(--cloud);
-/* flex-basis: ((100% - 72px) / 4); */
+  /* flex-basis: ((100% - 72px) / 4); */
 }
 
 .footer-social-svg {

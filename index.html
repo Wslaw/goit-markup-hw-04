@@ -30,13 +30,13 @@
           </a>
           <ul class="list list-header">
             <li>
-              <a class="link item" href="./index.html">Studio</a>
+              <a class="link item web current" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="link item" href="./portfolio.html">Portfolio</a>
+              <a class="link item port" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="link item" href="">Contacts</a>
+              <a class="link item cont" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -68,7 +68,20 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button data-modal-open class="hero-btn" type="button">
+            Order Service
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ratione expedita placeat ullam at doloremque doloribus, nulla
+                qui veniam perspiciatis laboriosam vel fugiat, facere, labore
+                enim culpa perferendis. Impedit, iusto praesentium.
+              </p>
+              <button data-modal-close class="close-btn">Close</button>
+            </div>
+          </div>
         </div>
       </section>
       <!-- ---------------------------------------------------- -->
@@ -279,7 +292,10 @@
                     <li class="social-icons">
                       <a class="social-link" href="www.facebook.com">
                         <svg class="social-svg" width="16" height="16">
-                          <use class="social-use" href="./images/icons.svg#icon-facebook-1"></use>
+                          <use
+                            class="social-use"
+                            href="./images/icons.svg#icon-facebook-1"
+                          ></use>
                         </svg>
                       </a>
                     </li>
