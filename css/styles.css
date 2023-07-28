@@ -94,7 +94,8 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1158px;
+  max-width: 1440px;
+  /* max-width: 1158px; */
   /* 1128 в макеті + 2х15рх */
   padding-left: 15px;
   padding-right: 15px;
@@ -434,6 +435,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .cards-list {
@@ -442,7 +444,12 @@ body {
   flex-basis: calc((100% - 72px) / 4);
   justify-content: center;
   align-items: center;
-  border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    
 }
 
 .cards .subtitle {
@@ -488,7 +495,8 @@ body {
   height: 40px;
   justify-content: center;
   align-items: center;
-  transition-duration: 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-duration: 250ms; */
   /* transition-timing-function: cubic-bezier(0.4 0 0.2 1); */
 }
 
@@ -530,6 +538,7 @@ body {
 .customers-use:hover {
   fill: var(--ocean);
 }
+
 
 /* --------------------------------------------------------------- */
 /*                               Footer                            */
@@ -574,7 +583,7 @@ body {
 
 .footer-social-media {
   color: var(--white);
-  
+
   /* Body Medium */
   font-family: Roboto;
   font-size: 16px;
@@ -586,7 +595,7 @@ body {
 }
 
 .footer-list {
-  list-style-type: none;  
+  list-style-type: none;
   gap: 16px;
 }
 /* ---------------------------------- */
@@ -606,43 +615,34 @@ body {
   height: 40px;
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4,0,0.2,1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* transition-duration: 250ms; */
   /* transition-background: 250ms; */
 
-/* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    /* transition-duration: 250ms;
+  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0s;
     transition-property: all; */
 }
 
-
-
-
-
-
-
-
-
-
-
+.social-svg {
+  fill: var(--cloud);
+/* flex-basis: ((100% - 72px) / 4); */
+}
 
 .footer-social-svg {
   fill: var(--cloud);
 }
 
-
 .footer-social-link:hover,
 .footer-social-link:focus {
-  
   background-color: #31d0aa;
-  
 }
 
 .footer .container {
   display: flex;
-   align-items:baseline;
+  align-items: baseline;
 }
 
 .futer-logo,
