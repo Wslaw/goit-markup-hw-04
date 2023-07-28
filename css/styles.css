@@ -582,6 +582,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-list {
@@ -605,7 +606,8 @@ body {
   height: 40px;
   justify-content: center;
   align-items: center;
-  
+  transition: cubic-bezier(0.4,0,0.2,1);
+  transition-duration: 250ms;
   /* transition-background: 250ms; */
 }
 
@@ -616,8 +618,7 @@ body {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  transition: cubic-bezier(0.4,0,0.2,1);
-  transition-duration: 250ms;
+  
   background-color: #31d0aa;
   
 }
