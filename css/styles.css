@@ -112,6 +112,9 @@ body {
   display: flex;
   align-items: center;
 }
+.web {
+  position: relative;
+}
 
 .list-header,
 .list-address {
@@ -121,7 +124,7 @@ body {
   align-items: center;
 }
 
- /* {
+/* {
   display: flex;
   gap: 40px;
   justify-content: space-between;
@@ -159,8 +162,6 @@ body {
   gap: 40px;
   margin-left: auto;
 }
-
-
 
 .link {
   text-decoration: none;
@@ -250,14 +251,14 @@ body {
   padding-bottom: 188px;
   max-width: 1440px;
   margin: 0 auto;
-/* Мабуть ніжніє строки треба в .hero .container */
+  /* Мабуть ніжніє строки треба в .hero .container */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);  
+    url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 }
 /* --------до сих пор------------------------- */
@@ -472,18 +473,18 @@ body {
 
 .box-employee {
   display: flex;
-  /* width: 232px;
-  height: 104px; */
   gap: 8px;
   flex-direction: column;
   align-items: center;
   padding: 32px 0;
+  /* /* width: 232px; */
+  min-height: 104px; */
+  
   /* text-align: center; */
   /* padding: 32px 16px; */
   /* background-color: blueviolet; */
   max-width: 232px;
 }
-
 
 .social-list {
   display: flex;
@@ -520,24 +521,24 @@ body {
 /*                              Customers                         */
 /* -------------------------------------------------------------- */
 
- .customers  {
+.customers {
   display: flex;
   flex-direction: column;
   justify-content: center;
-    padding: 120px 0;
-  }
+  padding: 120px 0;
+}
 .customers .title {
-   margin-bottom: 72px;
+  margin-bottom: 72px;
 }
 .customers-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 24px;  
+  gap: 24px;
 }
 .customers-item {
-  width: calc((100% - 120px) / 6); 
-  height: 88px;  
+  width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 .customers-link {
   padding: 16px 32px;
@@ -547,27 +548,24 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;     
+  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  color:var(--lightslate);  
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--lightslate);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-link:hover  {
-  border-color: var(--ocean);
-  color: var(--ocean); 
-}
-.customers-link:focus  {
+.customers-link:hover {
   border-color: var(--ocean);
   color: var(--ocean);
- }
+}
+.customers-link:focus {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
 .customers-svg {
   fill: currentColor;
 }
-
-
-
-
 
 /* .customers-use {
   fill: var(--lightslate);}
@@ -579,7 +577,7 @@ body {
   /* fill:currentColor; */
   /* border-color: #404bbf; 
   color: #404bbf;  */
-  }
+}
 /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 /* --------------------------------------------------------------- */
 /*                               Footer                            */
