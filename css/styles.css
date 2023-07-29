@@ -113,12 +113,20 @@ body {
   align-items: center;
 }
 
-.list-header {
+.list-header,
+.list-address {
   display: flex;
   gap: 40px;
   justify-content: space-between;
   align-items: center;
 }
+
+ /* {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+} */
 
 .list-header .item {
   padding: 24px 0;
@@ -138,6 +146,8 @@ body {
 }
 
 .header {
+  max-width: 1440px;
+  margin: 0 auto;
   border-bottom: 1px solid var(--cornflower);
   display: flex;
 }
@@ -152,12 +162,7 @@ body {
   margin-left: auto;
 }
 
-.list-address {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .link {
   text-decoration: none;
@@ -212,7 +217,7 @@ body {
 }
 
 .link.item.current::after {
-  content: "_________";
+  content: "____";
   width: 66px;
   height: 4px;
   color: var(--ocean);
@@ -246,6 +251,7 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   max-width: 1440px;
+  margin: 0 auto;
 /* Мабуть ніжніє строки треба в .hero .container */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -536,7 +542,7 @@ body {
   height: 88px;  
 }
 .customers-link {
-  /* padding: 16px 32px; */
+  padding: 16px 32px;
   border: 1px solid var(--lightslate);
   flex-shrink: 0;
   display: flex;
