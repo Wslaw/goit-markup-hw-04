@@ -119,9 +119,6 @@ body {
 
 }
 
-.mail{
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
 
 .list-header,
 .list-address {
@@ -131,12 +128,6 @@ body {
   align-items: center;
 }
 
-/* {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .list-header .item {
   padding: 24px 0;
@@ -240,6 +231,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .address {
@@ -261,15 +253,15 @@ body {
   padding-bottom: 188px;
   max-width: 1440px;
   margin: 0 auto;
-  /* Мабуть ніжніє строки треба в .hero .container */
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
 }
 /* --------до сих пор------------------------- */
 .container .hero-title {
@@ -693,6 +685,7 @@ body {
   flex-direction: column;
   margin-right: 120px;
   
+}
 
 
 
