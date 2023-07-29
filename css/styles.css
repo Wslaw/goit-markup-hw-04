@@ -582,7 +582,13 @@ body {
 }
 
 
+svg {
+  fill: currentColor;
+}
 
+.icon {
+  fill: currentColor;
+}
 
 .customers-svg {
   fill: currentColor;
