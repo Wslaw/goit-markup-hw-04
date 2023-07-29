@@ -146,8 +146,6 @@ body {
 }
 
 .header {
-  max-width: 1440px;
-  margin: 0 auto;
   border-bottom: 1px solid var(--cornflower);
   display: flex;
 }
