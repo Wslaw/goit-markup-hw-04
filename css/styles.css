@@ -114,6 +114,13 @@ body {
 }
 .web {
   position: relative;
+  color: var(--ocean);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+}
+
+.mail{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .list-header,
@@ -685,19 +692,9 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 120px;
-  /* align-items: baseline; */
-  /* justify-content: flex-start; */
-}
+  
 
-/* .footer-social {
-  display: flex;
-  flex-direction: column;
-  padding: 108px auto 124px;
-  column-gap: 16px;
-} */
-/* .futer-logo {
-  flex-direction: column;
-} */
+
 
 /* -------------------------------------------------------------- */
 /*                            Page Portfolio                      */
