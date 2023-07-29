@@ -473,18 +473,18 @@ body {
   gap: 8px;
   flex-direction: column;
   align-items: center;
-  margin: 32px auto;
+  padding: 32px 0;
   /* text-align: center; */
   /* padding: 32px 16px; */
   /* background-color: blueviolet; */
   max-width: 232px;
 }
 
-.social {
-}
+
 .social-list {
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -516,7 +516,7 @@ body {
 /*                              Customers                         */
 /* -------------------------------------------------------------- */
 
-.container .customers  {
+ .customers  {
   display: flex;
   flex-direction: column;
   justify-content: center;
