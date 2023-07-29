@@ -520,76 +520,45 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 72px; */
-  /* margin: 120px auto; */ 
-  padding: 120px 0;
-}
-
+    padding: 120px 0;
+  }
 .customers .title {
-  /* color:red; */
-  margin-bottom: 72px;
+   margin-bottom: 72px;
 }
-
 .customers-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 24px;  
 }
-
 .customers-item {
   width: calc((100% - 120px) / 6); 
-  /* width: 168px; */
-  height: 88px;
-  /* cursor: pointer; */
+    height: 88px;  
 }
-
 .customers-link {
-  padding: 16px 32px;
   border: 1px solid var(--lightslate);
-  border-radius: 4px;
-  
+  padding: 16px 32px;
+  border-radius: 4px;  
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-
-     
+  height: 100%;     
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  color:var(--lightslate);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
+  /* color:var(--lightslate);   */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
 .customers-link:hover .customers-svg {
-  /* border-color: var(--ocean); */
-  /* color: var(--ocean); */
-  border-color: #404bbf; 
-  color: #404bbf; 
- 
+  border-color: var(--ocean);
+  color: var(--ocean); 
 }
-
 .customers-link:focus .customers-svg {
-  /* border-color: var(--ocean); */
-  /* color: var(--ocean); */
-  border-color: #404bbf; 
-  color: #404bbf; 
-}
-
-
-svg {
-  fill: currentColor;
-}
-
-.icon {
-  fill: currentColor;
-}
-
+  border-color: var(--ocean);
+  color: var(--ocean);
+ }
 .customers-svg {
   fill: currentColor;
 }
@@ -600,10 +569,12 @@ svg {
 .customers-use:hover {
     fill: var(--ocean);
 } */
-/* .customers-link:hover .customers-svg {
-  fill: var(--ocean);
-  } */
-
+.customers-link:hover .customers-svg {
+  /* fill:currentColor; */
+  /* border-color: #404bbf; 
+  color: #404bbf;  */
+  }
+/* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 /* --------------------------------------------------------------- */
 /*                               Footer                            */
 /* --------------------------------------------------------------- */
