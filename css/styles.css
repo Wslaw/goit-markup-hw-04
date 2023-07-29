@@ -143,10 +143,13 @@ body {
   align-items: center;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+  /* box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
+
+    box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 
 .header {
   border-bottom: 1px solid var(--cornflower);
@@ -477,12 +480,12 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 32px 0;
-   min-height: 104px; */
+   /* min-height: 104px;  */
   
   /* text-align: center; */
   /* padding: 32px 16px; */
   /* background-color: blueviolet; */
-  max-width: 232px;
+  /* max-width: 232px; */
 }
 
 .social-list {
@@ -629,7 +632,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .footer-list {
