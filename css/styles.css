@@ -115,16 +115,15 @@ body {
 
 /* ---------------------------------------------------------------------- */
 /* -----------------Begin-------------Псевдокласси----------------------- */
-
-.list-header .current {
+.list-header .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .list-header .stud.current::after {
   position: absolute;
   left: 0;
-  bottom: -1px;  
+  bottom: -1px;
   content: "";
   width: 48px;
   height: 4px;
@@ -132,12 +131,11 @@ body {
   border-radius: 2px;
   background: var(--ocean);
   color: var(--ocean);
-
 }
 .list-header .port.current::after {
   position: absolute;
   left: 0;
-  bottom: -1px;  
+  bottom: -1px;
   content: "";
   width: 66px;
   height: 4px;
@@ -146,12 +144,10 @@ body {
   background: var(--ocean);
   color: var(--ocean);
 }
-.list-header .stud{
-  position: relative;}
 .list-header .stud:hover::after {
-position: absolute;
+  position: absolute;
   left: 0;
-  bottom: -1px;  
+  bottom: -1px;
   content: "";
   width: 48px;
   height: 4px;
@@ -160,12 +156,11 @@ position: absolute;
   background: var(--ocean);
   color: var(--ocean);
 }
-.list-header .port {
-  position: relative;}
+
 .list-header .port:hover::after {
-position: absolute;
+  position: absolute;
   left: 0;
-  bottom: -1px;  
+  bottom: -1px;
   content: "";
   width: 66px;
   height: 4px;
@@ -174,12 +169,11 @@ position: absolute;
   background: var(--ocean);
   color: var(--ocean);
 }
-.list-header .cont {
-  position: relative;}
+
 .list-header .cont:hover::after {
-position: absolute;
+  position: absolute;
   left: 0;
-  bottom: -1px;  
+  bottom: -1px;
   content: "";
   width: 67px;
   height: 4px;
@@ -188,9 +182,6 @@ position: absolute;
   background: var(--ocean);
   color: var(--ocean);
 }
-
-
-
 
 /* -----------------------------END------псевдокласси------------------ */
 /* -------------------------------------------------------------------- */
@@ -218,8 +209,6 @@ position: absolute;
   /* box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
-
-  
 }
 
 .header {
@@ -231,7 +220,6 @@ position: absolute;
 
 .nav-page .logo-web {
   margin-right: 76px;
-  
 }
 
 .address {
@@ -254,8 +242,7 @@ position: absolute;
 }
 
 .logo-web {
-  color: var(--ocean);
-  /* color: var(--iris); */
+  color: var(--iris);
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
