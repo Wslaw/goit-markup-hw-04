@@ -218,8 +218,8 @@ body {
   color: var(--iris);
 }
 
-.link.item.current::after {
-  content: "____";
+.link.item.current:hover::after {
+  content: "_";
   width: 66px;
   height: 4px;
   color: var(--ocean);
