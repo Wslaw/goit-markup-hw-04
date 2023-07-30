@@ -113,13 +113,10 @@ body {
   align-items: center;
 }
 
-
 /* ---------------------------------------------------------------------- */
 /* -----------------Begin-------------Псевдокласси----------------------- */
 
-
-
-.underline-list {  
+.underline-list {
   position: relative;
   /* color: var(--ocean); */
   /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
@@ -132,18 +129,17 @@ position: relative;
 position: relative;
 } */
 
-
-.underline-list.underline-current::after {  
+.underline-list.underline-current::after {
   position: absolute;
   left: 0;
   top: 104%;
   transform: translateY(-104%);
   content: "";
   width: 48px;
-height: 4px;
-flex-shrink: 0;
-border-radius: 2px;
-background: var(--ocean);  
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--ocean);
 }
 
 .underline-portfolio:hover::after {
@@ -153,10 +149,10 @@ background: var(--ocean);
   transform: translateY(-104%);
   content: "";
   width: 66px;
-height: 4px;
-flex-shrink: 0;
-border-radius: 2px;
-background: var(--ocean); 
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--ocean);
 }
 
 .underline-contacts:hover::after {
@@ -166,19 +162,14 @@ background: var(--ocean);
   transform: translateY(-104%);
   content: "";
   width: 67px;
-height: 4px;
-flex-shrink: 0;
-border-radius: 2px;
-background: var(--ocean); 
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--ocean);
 }
 
 /* -----------------------------END------псевдокласси------------------ */
 /* -------------------------------------------------------------------- */
-
-
-
-
-
 
 .list-header,
 .list-address {
@@ -187,7 +178,6 @@ background: var(--ocean);
   justify-content: space-between;
   align-items: center;
 }
-
 
 .list-header .item {
   padding: 24px 0;
@@ -205,12 +195,9 @@ background: var(--ocean);
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
 
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-     0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
-
 
 .header {
   border-bottom: 1px solid var(--cornflower);
@@ -279,8 +266,6 @@ background: var(--ocean);
   color: var(--iris);
 }
 
-
-
 .contacts {
   color: var(--slate);
 
@@ -289,7 +274,7 @@ background: var(--ocean);
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -311,15 +296,16 @@ background: var(--ocean);
   padding-bottom: 188px;
   max-width: 1440px;
   margin: 0 auto;
- background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
 }
 /* --------до сих пор------------------------- */
 .container .hero-title {
@@ -537,8 +523,8 @@ background: var(--ocean);
   flex-direction: column;
   align-items: center;
   padding: 32px 0;
-   /* min-height: 104px;  */
-  
+  /* min-height: 104px;  */
+
   /* text-align: center; */
   /* padding: 32px 16px; */
   /* background-color: blueviolet; */
@@ -588,7 +574,6 @@ background: var(--ocean);
 }
 .customers .title {
   margin-bottom: 72px;
-
 }
 .customers-list {
   list-style-type: none;
@@ -716,12 +701,10 @@ background: var(--ocean);
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .social-svg {
   fill: var(--cloud);
-  
 }
 
 .footer-social-svg {
@@ -743,22 +726,16 @@ background: var(--ocean);
   display: flex;
   flex-direction: column;
   margin-right: 120px;
-  
 }
 /* -------------------------------------------------------------- */
 /*                  Modal Window                                  */
 /* -------------------------------------------------------------- */
 
 .backdrop {
-
 }
 
 .modal {
-
 }
-
-
-
 
 /* -------------------------------------------------------------- */
 /*                            Page Portfolio                      */
