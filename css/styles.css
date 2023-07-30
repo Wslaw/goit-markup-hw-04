@@ -231,7 +231,7 @@ position: absolute;
 
 .nav-page .logo-web {
   margin-right: 76px;
-  color: var(--ocean);
+  
 }
 
 .address {
@@ -254,7 +254,8 @@ position: absolute;
 }
 
 .logo-web {
-  color: var(--iris);
+  color: var(--ocean);
+  /* color: var(--iris); */
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
