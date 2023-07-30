@@ -130,7 +130,9 @@ position: relative;
 .underline-contacts {
 position: relative;
 } */
-
+.underline-current{
+  display: block;
+}
 .underline-list.underline-current::after {
   position: absolute;
   left: 0;
@@ -145,12 +147,16 @@ position: relative;
   background: var(--ocean);
   color: var(--ocean);
 }
+.underline-portfolio.underline-list.underline-current::after {
+width: 66px;
+}
 
 .underline-portfolio:hover::after {
   position: absolute;
   left: 0;
-  top: 104%;
-  transform: translateY(-104%);
+  bottom: -1px;
+  /* top: 104%; */
+  /* transform: translateY(-104%); */
   content: "";
   width: 66px;
   height: 4px;
@@ -162,8 +168,9 @@ position: relative;
 .underline-contacts:hover::after {
   position: absolute;
   left: 0;
-  top: 104%;
-  transform: translateY(-104%);
+  bottom: -1px;
+  /* top: 104%; */
+  /* transform: translateY(-104%); */
   content: "";
   width: 67px;
   height: 4px;
