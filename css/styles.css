@@ -307,9 +307,9 @@ position: relative;
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
-  /* background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
+  background-position: center;
 }
 /* --------до сих пор------------------------- */
 .container .hero-title {
