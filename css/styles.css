@@ -454,7 +454,7 @@ body {
   max-width: 264px;
   width: 100%;
   /* width: 264px; */
-  max-height: 112px;
+  height: 112px;
   gap: 8px;
   /* padding: 24px 100px; */
 }
