@@ -116,29 +116,42 @@ body {
 /* ---------------------------------------------------------------------- */
 /* -----------------Begin-------------Псевдокласси----------------------- */
 
-.underline-list {
+.list-header .current {
   position: relative;
-  /* color: var(--ocean); */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.list-header .link {
-  /* position: relative; */
-}
-/* .underline-portfolio {
-position: relative;
-}
-.underline-contacts {
-position: relative;
-} */
-.underline-current{
-  display: block;
-}
-.underline-list.underline-current::after {
+
+.list-header .stud.current::after {
   position: absolute;
   left: 0;
-  bottom: -1px;
-  /* top: 0; */
-  /* transform: translateY(-104%); */
+  bottom: -1px;  
+  content: "";
+  width: 48px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--ocean);
+  color: var(--ocean);
+
+}
+.list-header .port.current::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;  
+  content: "";
+  width: 66px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--ocean);
+  color: var(--ocean);
+}
+.list-header .stud{
+  position: relative;}
+.list-header .stud:hover::after {
+position: absolute;
+  left: 0;
+  bottom: -1px;  
   content: "";
   width: 48px;
   height: 4px;
@@ -147,37 +160,37 @@ position: relative;
   background: var(--ocean);
   color: var(--ocean);
 }
-.underline-portfolio.underline-list.underline-current::after {
-width: 66px;
-}
-
-.underline-portfolio:hover::after {
-  position: absolute;
+.list-header .port {
+  position: relative;}
+.list-header .port:hover::after {
+position: absolute;
   left: 0;
-  bottom: -1px;
-  /* top: 104%; */
-  /* transform: translateY(-104%); */
+  bottom: -1px;  
   content: "";
   width: 66px;
   height: 4px;
   flex-shrink: 0;
   border-radius: 2px;
   background: var(--ocean);
+  color: var(--ocean);
 }
-
-.underline-contacts:hover::after {
-  position: absolute;
+.list-header .cont {
+  position: relative;}
+.list-header .cont:hover::after {
+position: absolute;
   left: 0;
-  bottom: -1px;
-  /* top: 104%; */
-  /* transform: translateY(-104%); */
+  bottom: -1px;  
   content: "";
   width: 67px;
   height: 4px;
   flex-shrink: 0;
   border-radius: 2px;
   background: var(--ocean);
+  color: var(--ocean);
 }
+
+
+
 
 /* -----------------------------END------псевдокласси------------------ */
 /* -------------------------------------------------------------------- */
