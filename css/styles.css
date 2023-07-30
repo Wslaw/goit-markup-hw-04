@@ -119,9 +119,11 @@ body {
 .underline-list {
   position: relative;
   /* color: var(--ocean); */
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
+.list-header .link {
+  /* position: relative; */
+}
 /* .underline-portfolio {
 position: relative;
 }
@@ -132,14 +134,16 @@ position: relative;
 .underline-list.underline-current::after {
   position: absolute;
   left: 0;
-  top: 104%;
-  transform: translateY(-104%);
+  bottom: -1px;
+  /* top: 0; */
+  /* transform: translateY(-104%); */
   content: "";
   width: 48px;
   height: 4px;
   flex-shrink: 0;
   border-radius: 2px;
   background: var(--ocean);
+  color: var(--ocean);
 }
 
 .underline-portfolio:hover::after {
@@ -303,9 +307,9 @@ position: relative;
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 /* --------до сих пор------------------------- */
 .container .hero-title {
