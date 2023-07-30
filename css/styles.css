@@ -442,7 +442,7 @@ body {
 }
 
 .features-icon {
-  display: block;
+  display: flex;
 
   border-radius: 4px;
   background: var(--cloud);
