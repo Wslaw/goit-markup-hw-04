@@ -112,12 +112,72 @@ body {
   display: flex;
   align-items: center;
 }
-.web {
-  position: relative;
-  color: var(--ocean);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
+
+/* ---------------------------------------------------------------------- */
+/* -----------------Begin-------------Псевдокласси----------------------- */
+
+
+
+.underline-web {  
+  position: relative;
+  /* color: var(--ocean); */
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
 }
+
+.underline-portfolio {
+position: relative;
+}
+.underline-contacts {
+position: relative;
+}
+
+
+.underline-web::after {  
+  position: absolute;
+  left: 0;
+  top: 104%;
+  transform: translateY(-104%);
+  content: "";
+  width: 48px;
+height: 4px;
+flex-shrink: 0;
+border-radius: 2px;
+background: var(--ocean);  
+}
+
+.underline-portfolio:hover::after {
+  position: absolute;
+  left: 0;
+  top: 104%;
+  transform: translateY(-104%);
+  content: "";
+  width: 66px;
+height: 4px;
+flex-shrink: 0;
+border-radius: 2px;
+background: var(--ocean); 
+}
+
+.underline-contacts:hover::after {
+  position: absolute;
+  left: 0;
+  top: 104%;
+  transform: translateY(-104%);
+  content: "";
+  width: 67px;
+height: 4px;
+flex-shrink: 0;
+border-radius: 2px;
+background: var(--ocean); 
+}
+
+/* -----------------------------END------псевдокласси------------------ */
+/* -------------------------------------------------------------------- */
+
+
+
+
 
 
 .list-header,
@@ -149,6 +209,7 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16),
      0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 
 
 .header {
@@ -218,12 +279,7 @@ body {
   color: var(--iris);
 }
 
-.link.item.current:hover::after {
-  content: "_";
-  width: 66px;
-  height: 4px;
-  color: var(--ocean);
-}
+
 
 .contacts {
   color: var(--slate);
@@ -689,6 +745,18 @@ body {
   margin-right: 120px;
   
 }
+/* -------------------------------------------------------------- */
+/*                  Modal Window                                  */
+/* -------------------------------------------------------------- */
+
+.backdrop {
+
+}
+
+.modal {
+
+}
+
 
 
 

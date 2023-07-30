@@ -29,14 +29,14 @@
             >Web<span class="logo-studio link">Studio</span>
           </a>
           <ul class="list list-header">
-            <li>
-              <a class="link item web current" href="./index.html">Studio</a>
+            <li class="underline-web underline-list underline-current">
+              <a class="link item current" href="./index.html">Studio</a>
             </li>
-            <li>
-              <a class="link item port" href="./portfolio.html">Portfolio</a>
+            <li class="underline-portfolio underline-list">
+              <a class="link item" href="./portfolio.html">Portfolio</a>
             </li>
-            <li>
-              <a class="link item cont" href="">Contacts</a>
+            <li class="underline-contact underline-list">
+              <a class="link item" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +45,7 @@
           <ul class="list list-address">
             <li>
               <a
-                class="link contacts "
+                class="link contacts"
                 href="mailto:info@devstudio.com"
                 target="_blank"
                 >info@devstudio.com
@@ -71,17 +71,6 @@
           <button data-modal-open class="hero-btn" type="button">
             Order Service
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ratione expedita placeat ullam at doloremque doloribus, nulla
-                qui veniam perspiciatis laboriosam vel fugiat, facere, labore
-                enim culpa perferendis. Impedit, iusto praesentium.
-              </p>
-              <button data-modal-close class="close-btn">Close</button>
-            </div>
-          </div>
         </div>
       </section>
       <!-- ---------------------------------------------------- -->
@@ -380,7 +369,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="customers-svg" width="104" height="56" >
+                <svg class="customers-svg" width="104" height="56">
                   <use
                     class="customers-use"
                     href="./images/icons.svg#icon-Logo1"
@@ -537,6 +526,20 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <!-- --------------------------------------------- -->
+    <!--             Modal Window                      -->
+    <!-- --------------------------------------------- -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+          expedita placeat ullam at doloremque doloribus, nulla qui veniam
+          perspiciatis laboriosam vel fugiat, facere, labore enim culpa
+          perferendis. Impedit, iusto praesentium.
+        </p>
+        <button data-modal-close class="close-btn">Close</button>
+      </div>
+    </div>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
