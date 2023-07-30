@@ -119,21 +119,21 @@ body {
 
 
 
-.underline-web {  
+.underline-list {  
   position: relative;
   /* color: var(--ocean); */
   /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
 }
 
-.underline-portfolio {
+/* .underline-portfolio {
 position: relative;
 }
 .underline-contacts {
 position: relative;
-}
+} */
 
 
-.underline-web::after {  
+.underline-list.underline-current::after {  
   position: absolute;
   left: 0;
   top: 104%;
