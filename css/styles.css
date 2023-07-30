@@ -231,6 +231,7 @@ position: absolute;
 
 .nav-page .logo-web {
   margin-right: 76px;
+  color: var(--ocean);
 }
 
 .address {
