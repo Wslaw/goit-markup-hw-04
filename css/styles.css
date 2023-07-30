@@ -290,7 +290,7 @@ position: relative;
 /* ------------------------------------------------------------- */
 
 .hero {
-  background: var(--navyblue);
+  /* background: var(--navyblue); */
   color: var(--white);
   padding-top: 188px;
   padding-bottom: 188px;
@@ -305,7 +305,6 @@ position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: var(--white);
 }
 /* --------до сих пор------------------------- */
 .container .hero-title {
