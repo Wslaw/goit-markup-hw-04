@@ -437,13 +437,14 @@ body {
   width: calc((100% - 3 * 24px) / 4);
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .features-icon {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
   border-radius: 4px;
   background: var(--cloud);
   display: flex;
