@@ -277,7 +277,8 @@ body {
 }
 
 .link.item.current {
-  color: var(--iris);
+  /* color: var(--iris); */
+  color: var(--ocean);
 }
 
 .contacts {
