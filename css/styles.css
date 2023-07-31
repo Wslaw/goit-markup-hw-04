@@ -770,18 +770,19 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 /* -------------------------Замечание бота для кнопки-------------- */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* -----------Замечание бота для кнопк ------------------ */
 }
 
 .modal-close-btn {
   /* ------------------------------------------------------------- */
+  display: flex;
   background-color: var(--cornflower);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   border 250ms cubic-bezier(0.4, 0, 0.2, 1);
