@@ -930,10 +930,10 @@ body {
 }
 /* ----------------------------------------------------------- */
 /* ------------------Overlay---------------------------------- */
-.item-portfolio:hover .overlay,
+/* .item-portfolio:hover .overlay,
 .item-portfolio:focus .overlay {
   transform: translateY(0%);
-}
+} */
 
 .box {
   position: relative;
@@ -948,6 +948,7 @@ body {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
+  /* transform: translateY(0%); */
   transition: transform 250ms ease-in-out;
   color: var(--cloud);
   background: var(--iris);
@@ -957,7 +958,8 @@ body {
 /* --------------------END-----Overlay---------------------------------- */
 /* -------------------------------------------------------------------- */
 
-.overlay:focus {
+.overlay:focus,
+.overlay:hover {
    transform: translateY(0%);
 }
 
