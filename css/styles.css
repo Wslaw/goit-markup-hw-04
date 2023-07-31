@@ -934,6 +934,10 @@ body {
 .item-portfolio:focus .overlay {
   transform: translateY(0%);
 }
+.overlay:focus {
+  transform: translateY(0%);
+
+}
 
 .box {
   position: relative;
@@ -969,12 +973,17 @@ body {
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+  transform: translateY(0%);
+
+
 }
 .box-portfolio {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
   text-align: start;
+  
 }
 
 .title-portfolio {
