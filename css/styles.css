@@ -769,13 +769,11 @@ body {
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-/* -------------------------Замечание бота для кнопки-------------- */
+  /* -------------------------Замечание бота для кнопки-------------- */
   /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
-  cursor: pointer;
+  /*  */
+  /*  */
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* -----------Замечание бота для кнопк ------------------ */
 }
@@ -783,9 +781,14 @@ body {
 .modal-close-btn {
   /* ------------------------------------------------------------- */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
   background-color: var(--cornflower);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* --------------------------------------------------------------- */
   position: absolute;
   top: 24px;
@@ -800,14 +803,14 @@ body {
   background-color: var(--ocean);
   fill: var(--white);
   /* -----иЗамечание бота для кнопк----- */
-   border: none;
-   /* ----------------------------------- */
+  border: none;
+  /* ----------------------------------- */
 }
 .modal-close-btn:focus {
-  fill:var(--white);
+  fill: var(--white);
 }
 .modal-close-button {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
