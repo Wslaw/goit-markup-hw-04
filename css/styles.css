@@ -755,7 +755,7 @@ body {
   /* background-color: rgba(70, 70, 70, 0.6); */
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -773,7 +773,7 @@ body {
   /* display: flex; */
   /*  */
   /*  */
-  
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* -----------Замечание бота для кнопк ------------------ */
 }
@@ -788,7 +788,7 @@ body {
   cursor: pointer;
   background-color: var(--cornflower);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* --------------------------------------------------------------- */
   position: absolute;
   top: 24px;
@@ -802,9 +802,8 @@ body {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--ocean);
-  /* fill: var(--white); */
-   border: none;
-
+  fill: var(--white);
+  border: none;
 }
 .modal-close-btn:focus {
   fill: var(--white);
@@ -957,6 +956,12 @@ body {
 }
 /* --------------------END-----Overlay---------------------------------- */
 /* -------------------------------------------------------------------- */
+
+.overlay:focus {
+   transform: translateY(0%);
+}
+
+
 
 .item-portfolio {
   /* display: block; */
