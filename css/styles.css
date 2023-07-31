@@ -958,10 +958,18 @@ body {
 /* --------------------END-----Overlay---------------------------------- */
 /* -------------------------------------------------------------------- */
 
-.overlay:focus,
+.box:focus {
+  transform: translate(0%);
+}
+.box:hover {
+  transform: translate(0%);
+}
+
+
+/* .overlay:focus,
 .overlay:hover {
    transform: translateY(0%);
-}
+} */
 
 
 
