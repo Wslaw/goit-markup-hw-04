@@ -934,10 +934,10 @@ body {
 .item-portfolio:focus .overlay {
   transform: translateY(0%);
 }
-.overlay:focus {
+/* .overlay:focus {
   transform: translateY(0%);
 
-}
+} */
 
 .box {
   position: relative;
