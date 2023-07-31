@@ -415,6 +415,8 @@ body {
 }
 
 .hero-feature {
+  
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -445,7 +447,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8px;
+  /* gap: 8px; */
+  /* margin-bottom: 8px; */
   border-radius: 4px;
   background: var(--cloud);
   display: flex;
